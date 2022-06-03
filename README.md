@@ -105,7 +105,9 @@ Model evaluation is done using the R-squared score on the test set.
 ## Business Goals:
 1. The `temperature` is highly correlated and having a high coefficient with `cnt,` but we know from `EDA` that if the temperature goes higher than 35, we see fewer bikes rented. So they should know that when the temperature is between `20-35`, there will be more people renting bikes. 
 2. If the weather is like `Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds,` then people tend to rent bikes less. 
-3. The windspeed shows a negative coefficient with `y or cnt,` but we need to know when wind speed is between `5-20` then people rent more bikes through EDA, but we have to know that wind speed above will always affect.
-4. `spring` shows a negative coefficient with `y or cnt,` so we should offer more in `spring.`
-5. The business  has increased from 2018 to 2019 so that's why it show high coefficient with `y or cnt`.
+3. The windspeed shows a negative coefficient with `cnt,` but we need to know when wind speed is between `5-20` then people rent more bikes through EDA, but we have to know that wind speed above will always affect.
+4. `spring` shows a negative coefficient with `cnt,` so we should offer more in `spring.`
+5. The business  has increased from 2018 to 2019 so that's why it show high coefficient with `cnt`.
+6. People prefer to rent a bike between May to October.
+7. And gradually decrease from December to Feb.
 
