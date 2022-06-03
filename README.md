@@ -83,15 +83,18 @@ Model evaluation is done using the R-squared score on the test set.
 
 
 ## Final Result:
+
 1. **R-square value:**
-    a. **For train:**
-        - R-squared: 0.834
-        - Adj. R-squared: 0.830
-    b. **For test:**
-        - R-squared: 0.816
-        - Adj. R-squared: 0.804
-    c. Difference between train and test R-square value is 0.834-0.816 = 0.018 (1.8%)
-    d. Difference between train and test Adj. R-squared value is 0.830-0.804 = 0.026 (2.6%)
+	-  **For train:**
+		- R-squared: 0.834
+		- Adj. R-squared: 0.830
+	- **For test:**
+		- R-squared: 0.816
+		- Adj. R-squared: 0.804
+	- Difference between train and test R-square value is 0.834-0.816 = 0.018 (1.8%)
+	- Difference between train and test Adj. R-squared value is 0.830-0.804 = 0.026 (2.6%)
+
+
 2. `Temperature` shows the highest coefficient of around 0.400700, which means when the `temp` is increased by one unit, the rental bike increases by 0.400700
 3. `Light Rain + Scattered clouds` shows a negative coefficient of around 0.291683; this means when `this variable` increases by one unit, the rental bike will decrease by 0.291683.
 4. `yr` shows the 2nd  highest coefficient of around 0.235183, which means when the `yr` is increased by one unit, the rental bike increases by 0.235183
@@ -100,7 +103,7 @@ Model evaluation is done using the R-squared score on the test set.
 ****
 
 ## Business Goals:
-1. If the `temperature` is highly correlated and hiving a high coefficient with `cnt,` but we know from `EDA` that if the temperature goes higher than 35, we see fewer bikes rented. So they should know that when the temperature is between `20-35`, there will be more people renting bikes. 
+1. The `temperature` is highly correlated and having a high coefficient with `cnt,` but we know from `EDA` that if the temperature goes higher than 35, we see fewer bikes rented. So they should know that when the temperature is between `20-35`, there will be more people renting bikes. 
 2. If the weather is like `Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds,` then people tend to rent bikes less. 
 3. The windspeed shows a negative coefficient with `y or cnt,` but we need to know when wind speed is between `5-20` then people rent more bikes through EDA, but we have to know that wind speed above will always affect.
 4. `spring` shows a negative coefficient with `y or cnt,` so we should offer more in `spring.`
